@@ -8,3 +8,15 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+
+# llama.rn (on-device LLM)
+-keep class com.rnllama.** { *; }
+
+# MMKV storage
+-keep class com.tencent.mmkv.** { *; }
+
+# React Native Reanimated
+-keep class com.swmansion.reanimated.** { *; }
+
+# React Native Worklets
+-keep class com.swmansion.worklets.** { *; }
